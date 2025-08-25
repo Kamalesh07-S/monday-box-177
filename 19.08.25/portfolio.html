@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Roboto','Times New Roman', Times, serif;
+			margin: 0;
+			background: #bdc6c9;
+			color: #222;
+		}
+		header {
+			background: #222;
+			color: #fff;
+			padding: 40px 0 20px 0;
+			text-align: left;
+		}
+		header img {
+			width: 120px;
+			border-radius: 50%;
+			margin-bottom: 20px;
+            align-items: left;
+		}
+		h1 {
+			margin: 0 0 10px 0;
+			font-size: 2.5em;
+		}
+		h2 {
+			color: #0077b6;
+			margin-top: 40px;
+		}
+		section {
+			max-width: 900px;
+			margin: 40px auto;
+			background: #f4ecf3;
+			border-radius: 8px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+			padding: 32px;
+		}
+		ul {
+			padding-left: 20px;
+		}
+        .interns {
+			display: flex;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 24px;
+		}
+		.intern-card {
+			background: #f4f6f8;
+			border-radius: 6px;
+			padding: 20px;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+		.projects {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 24px;
+		}
+		.project-card {
+			background: #f4f6f8;
+			border-radius: 6px;
+			padding: 20px;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+		}
+		.contact {
+			text-align: center;
+		}
+		.contact a {
+			color: #0077b6;
+			text-decoration: none;
+			margin: 0 10px;
+		}
+		
+	
+	</style>
+</head>
+<body>
+	<header>
+	<!-- Add your photo below (optional) -->
+	<!-- Use a relative path or web URL for images, e.g. 'images/profile.jpg' -->
+	<img src="C:\Users\kamalesh\Downloads.jpg" alt="Kamalesh">
+	<h1>Kamalesh</h1>
+	<p>Full Stack Developer</p>
+	</header>
+	<section>
+		<h2>About Me</h2>
+		<p>
+			I am an innovator with a passion for full stack development. I enjoy building scalable web applications and learning new technologies to solve real-world problems.
+	</section>
+	<section>
+		<h2>Skills</h2>
+		<ul>
+			<li>Python</li>
+			<li>Full Stack Development (HTML, CSS, JavaScript, React, Node.js)</li>
+			<li>Prompt Engineering</li>
+			<li>Database Management (SQL, MongoDB)</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Internships</h2>
+		<div class="interns">
+			<div class="intern-card">
+				<h3>Software Developer Intern</h3>
+				<p>ABC Tech Solutions (June 2024 - August 2024)<br>
+				Worked on building RESTful APIs and contributed to the front-end development of a client dashboard using React.</p>
+			</div>
+			<!-- Add more intern cards as needed -->
+		</div>
+	</section>
+	<section>
+		<h2>Projects</h2>
+		<div class="projects">
+			<div class="project-card">
+				<h3>Portfolio Website</h3>
+				<p>Designed and developed a personal portfolio website using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+			</div>
+			<div class="project-card">
+				<h3>Task Manager App</h3>
+				<p>Built a full stack task manager application with React and Node.js, featuring user authentication and real-time updates.</p>
+			</div>
+			<!-- Add more project cards as needed -->
+		</div>
+	</section>
+	<section class="contact">
+		<h2>Contact</h2>
+		<p>
+			Email: <a href="mailto:kamaleshs.saravanan@gmail.com">kamaleshs.saravanan@gmail.com</a><br>
+			LinkedIn: <a href="https://linkedin.com/in/kamalesh" target="_blank">linkedin.com/in/kamalesh</a><br>
+			GitHub: <a href="https://github.com/kamalesh" target="_blank">github.com/kamalesh</a>
+		</p>
+	</section>
+</body>
+</html>
