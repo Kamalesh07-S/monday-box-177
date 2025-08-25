@@ -1,0 +1,70 @@
+show databases;
+use placement;
+
+create table Category1(
+cid int primary key,
+cname varchar(30),
+cdesc varchar(40)
+);
+
+create table Product1(
+pid int primary key,
+pname varchar(30),
+cid int not null,
+foreign key(cid) references category1 (cid) 
+on delete cascade  
+on update cascade  
+);
+
+drop table product1;
+drop  table category1;
+
+desc product1;
+desc category1;
+
+insert into category1 values ( 1,'Tech','About tech products added'),(2,'Non-tech','Non tech things'),(3,'Books','About educational Things'),(4,'Food','About Eatables');
+insert into product1 values (1,'Oneplus 11R',1),(2,'Burger',4),(3,'Harry potter BOOKS',3),(4,'Cleaning MOP',2),(5,'Redmi 12 5G',1),(6,'Chicken Biriyani',4),(7,'Mat',2);
+select * from category1;
+select * from product1;
+
+ delete from category1 where cid=1;
+ select * from category1; 
+ select * from product1; 
+ 
+ update category1 set cid=1 where cid=4;
+ select * from category1;
+ select * from product1;
+
+create table College(
+  cid int primary key,
+  cname varchar(30) not null
+  );
+  
+create table department(
+  did int primary key,
+  dname varchar(30) not null,
+  cid int ,
+  foreign key(cid) references college (cid) 
+  on update cascade
+  on delete cascade
+  );
+  
+create table student1(
+  sid int primary key,
+  sname varchar(30) not null,
+  did int ,
+  foreign key(did) references department (did)
+  on update cascade
+  on delete cascade
+  );
+  
+  desc college;
+  desc department;
+  desc student1;
+  insert into college values ( 1,'Sathyabama University'),( 2,'St.Joseph College'),( 3,'Anna University'),( 4,'Panimalar University');
+  insert into department values ( 101,'ECE',1),( 102,'EEE',1),( 103,'Aero ',2),( 104,'ECE',3),( 105,'AI',3);
+  insert into student1 values ( 1001,'kamal',101),( 1002,'deva',101),( 1003,'ilavarasan',105),( 1004,'Amrith',104),( 1005,'Arjun',103);
+  select * from college;
+  select * from department;
+  select * from student1;
+  
