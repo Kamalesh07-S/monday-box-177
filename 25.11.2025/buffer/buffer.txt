@@ -1,0 +1,28 @@
+package string;
+import java.util.Scanner;
+public class modify {
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        System.out.println("Enter a string:");
+	        StringBuffer sb = new StringBuffer(sc.nextLine());
+	        System.out.println("\nOriginal: " + sb);
+	        sb.append(" Java");
+	        System.out.println("After append: " + sb);
+	        sb.insert(0, "Hello ");
+	        System.out.println("After insert: " + sb);
+	        sb.delete(6, 11);
+	        System.out.println("After delete: " + sb);
+	        sb.deleteCharAt(5);
+	        System.out.println("After deleteCharAt: " + sb);
+	        sb.replace(6, 11, "Coding");
+	        System.out.println("After replace: " + sb);
+	        StringBuffer rev = new StringBuffer(sb);
+	        rev.reverse();
+	        System.out.println("After reverse: " + rev);
+	        System.out.println("Length: " + sb.length());
+	        System.out.println("Capacity: " + sb.capacity());
+	        sb.setCharAt(0, 'H');
+	        System.out.println("After setCharAt: " + sb);
+	        System.out.println("Substring(0,5): " + sb.substring(0,5));
+	    }
+	}
