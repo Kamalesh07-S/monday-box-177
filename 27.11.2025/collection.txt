@@ -1,0 +1,70 @@
+LINKED LIST:
+
+package collections;
+import java.util.LinkedList;
+public class Coll {
+	public static void main (String[] args){
+		LinkedList<Object> arr=new LinkedList();
+		arr.add("abc");
+		arr.add(1001);
+		arr.add(101.23);
+		arr.add(true);
+		System.out.println("INITAL ARRAY:"+arr);
+		Object newar=arr.get(2);
+		arr.remove(3);
+		arr.set(1, 100);
+		System.out.println("AFTER ALTER"+arr);
+		System.out.println(newar);
+		
+		
+	}
+	
+
+}
+
+COLLECTION:
+
+package collections;
+import java.util.*;
+public class Coll {
+	public static void main (String[] args){
+		LinkedList<Object> arr=new LinkedList();
+		arr.add("abc");
+		arr.add(1001);
+		arr.add(101.23);
+		arr.add(true);
+		arr.add("Ravi");  
+        arr.add("Vijay");  
+        arr.add("Ajay");  
+		System.out.println("INITAL ARRAY:"+arr);
+		Object newar=arr.get(2);
+		LinkedList<Object> arr1=new LinkedList();
+		arr1.add(0);
+		arr1.add(0);
+		arr1.add(123.009);
+		arr1.add(345);
+		arr.addAll(arr1);
+		System.out.println(arr);
+		System.out.println(newar);
+		arr.remove(3);
+		arr.set(1, 100);
+		arr.removeLast();
+		System.out.println(arr);
+		arr.removeFirst();
+		System.out.println(arr);
+		arr.removeFirstOccurrence(0);
+		System.out.println(arr);
+		arr.addFirst("java");
+		System.out.println(arr);
+		arr.addLast("python");
+		System.out.println(arr);
+		arr.add(3, 90);
+		System.out.println(arr);
+		Iterator i=arr.descendingIterator();
+		while (i.hasNext()){
+		System.out.println(i.next());
+		}
+	}
+	
+
+}

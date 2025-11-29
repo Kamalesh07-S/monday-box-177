@@ -1,0 +1,24 @@
+package connection;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+public class Jdbc {
+    private static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/sat";
+    private static final String USER = "root";
+    private static final String PASS = "root";
+
+    public static void main(String[] args) {
+        Connection conn = null;
+
+        try {
+            conn = DriverManager.getConnection(DB_URL, USER, PASS);
+            
+            System.out.println("✅ SUCCESS! Connection established.");
+
+        } catch (SQLException e) {
+            System.out.println("❌ FAILURE! Could not connect.");
+            System.out.println("Error details: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+        }
+    }}
