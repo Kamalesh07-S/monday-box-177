@@ -1,0 +1,18 @@
+body {
+    background: #0f172a;
+    font-family: Arial;
+}
+
+.login-card {
+    background: white;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input, button {
+    width: 100%;
+    margin: 6px 0;
+    padding: 8px;
+}
